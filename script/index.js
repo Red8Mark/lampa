@@ -27,12 +27,15 @@ const prevBtn = document.querySelector(".slider-prev");
 let count = 0;
 let width;
 
+window.addEventListener("resize", init);
+init();
+
 function init() {
   width = document.querySelector(".slider").offsetWidth; //вычисляем ширину слайдера
   width = width / 3; //делим ширину на 3 чтобы выводить 3 елемента на экран
 
   if (window.innerWidth >= 840) {
-    width = width; //если шинина меньше заданного значения, то меняем количество выводимых елементов
+    // width = width; //если шинина меньше заданного значения, то меняем количество выводимых елементов
     nextBtn.addEventListener("click", () => {
       count++;
       if (count >= items.length - 2) {
@@ -93,9 +96,6 @@ function init() {
   });
   rollSlider();
 }
-
-window.addEventListener("resize", init);
-init();
 
 function rollSlider() {
   barbers.style.transform = "translate(-" + count * width + "px)";
