@@ -1,0 +1,20 @@
+footer {
+  background-color: #000;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 30px 10% 30px;
+}
+
+@media (max-width: 1480px) {
+  footer {
+    padding: 30px 5% 30px;
+  }
+}
+
+@media (max-width: 840px) {
+  footer .contacts {
+    flex-direction: column;
+    gap: .5rem;
+  }
+}

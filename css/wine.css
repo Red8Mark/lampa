@@ -1,0 +1,75 @@
+/* wine desing */
+.wine {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  background-color: var(--bg-color);
+}
+
+.wine h3 {
+  font-size: var(--h2-font);
+  margin-bottom: 60px;
+}
+
+.wine h3 span {
+  color: var(--accent-color);
+}
+
+.item-wrapper {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: .2rem;
+}
+
+.w-item {
+  position: relative;
+  display: flex;
+  text-align: end;
+  border: 1px solid var(--second-bg-color);
+  opacity: 0;
+  transform: translateY(100px);
+  transition: opacity .5s ease-in-out, transform .5s ease-in-out;
+}
+
+.w-item img {
+  width: 100%;
+  z-index: 1;
+}
+
+.w-item p {
+  position: absolute;
+  font-size: var(--p-font);
+  z-index: 4;
+  bottom: 0;
+  right: 0;
+  background-color: rgba(0, 0, 0, .7);
+  padding: 20px;
+}
+
+.s-item.animation-class {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+@media (max-width: 1480px) {
+  .wine {
+    padding: 100px 5% 60px;
+  }
+}
+
+@media (max-width: 840px) {
+  .item-wrapper {
+    grid-template-columns: 1fr;
+  }
+
+  .wine h3 {
+    font-size: 2rem;
+    align-self: center;
+  }
+
+  .w-item p {
+    left: 0;
+  }
+}

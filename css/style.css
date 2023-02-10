@@ -1,0 +1,86 @@
+@font-face {
+  font-family: "RockwellRegular";
+  src: url("../fonts/RockwellRegular.eot");
+  src: url("../fonts/RockwellRegular.eot?#iefix")format("embedded-opentype"),
+    url("../fonts/RockwellRegular.woff") format("woff"),
+    url("../fonts/RockwellRegular.ttf") format("truetype");
+  font-style: normal;
+  font-weight: 400;
+}
+
+@font-face {
+  font-display: swap;
+  font-family: 'Bitter';
+  font-style: normal;
+  font-weight: 400;
+  src: url('../fonts/bitter-v32-latin_cyrillic-regular.woff2') format('woff2'),
+    url('../fonts/bitter-v32-latin_cyrillic-regular.woff') format('woff');
+}
+
+@font-face {
+  font-display: swap;
+  font-family: 'Bitter';
+  font-style: normal;
+  font-weight: 600;
+  src: url('../fonts/bitter-v32-latin_cyrillic-600.woff2') format('woff2'),
+    url('../fonts/bitter-v32-latin_cyrillic-600.woff') format('woff');
+}
+
+@font-face {
+  font-display: swap;
+  font-family: 'Bitter';
+  font-style: normal;
+  font-weight: 700;
+  src: url('../fonts/bitter-v32-latin_cyrillic-700.woff2') format('woff2'),
+    url('../fonts/bitter-v32-latin_cyrillic-700.woff') format('woff');
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: Bitter, sans-serif;
+  font-feature-settings: 'pnum' on, 'lnum' on;
+  text-decoration: none;
+  list-style: none;
+  scroll-behavior: smooth;
+}
+
+:root {
+  --bg-color: #2a2a2a;
+  --second-bg-color: #202020;
+  --text-color: #fff;
+  --second-color: #ccc;
+  --accent-color: #FFA343;
+  --hover-color: #FF7514;
+  --big-font: 5rem;
+  --h2-font: 3rem;
+  --p-font: 1.1rem;
+}
+
+body {
+  min-width: 320px;
+  background-color: var(--bg-color);
+  color: var(--text-color);
+}
+
+section {
+  padding: 100px 10% 120px;
+}
+
+h2 {
+  font-weight: 400;
+  font-size: 2rem;
+  letter-spacing: .2rem;
+  margin-bottom: 5rem;
+}
+
+h3,
+h4 {
+  font-size: var(--p-font);
+  font-weight: 400;
+}
+
+a {
+  color: inherit;
+}
