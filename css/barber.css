@@ -46,7 +46,7 @@ button{
   width: 40px;
   height: 40px;
   cursor: pointer;
-  background-color: rgba(173, 173, 173, 0.4);
+  background-color: transparent;
   border: none;
   border-radius: 50%;
   outline: none;
