@@ -43,24 +43,31 @@
 }
 
 button{
-  height: 50px;
+  width: 40px;
+  height: 40px;
   cursor: pointer;
-  background-color: transparent;
+  background-color: rgba(173, 173, 173, 0.4);
   border: none;
+  border-radius: 50%;
   outline: none;
-  margin-bottom: 1rem;
+  padding-top: 5px;
 }
 
 .button img {
-  width: 50px;
+  width: 30px;
+  height: 30px;
 }
 
 .slider-next {
-  right: 5%;
+  right: 4%;
+  bottom: 50%;
+  padding-left: 2px;
 }
 
 .slider-prev {
-  left: 5%;
+  left: 4%;
+  bottom: 50%;
+  padding-right: 2px;
 }
 
 .b-item {

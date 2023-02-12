@@ -37,7 +37,7 @@ function init() {
   if (window.innerWidth >= 840) {
     // width = width; //если шинина меньше заданного значения, то меняем количество выводимых елементов
     nextBtn.addEventListener("click", () => {
-      // count++;
+      count++;
       if (count >= items.length - 2) {
         count = 0;
       }
@@ -55,7 +55,7 @@ function init() {
   if (window.innerWidth < 840 && window.innerWidth >= 540) {
     width = (width * 3) / 2; //если шинина меньше заданного значения, то меняем количество выводимых елементов
     nextBtn.addEventListener("click", () => {
-      // count++;
+      count++;
       if (count >= items.length - 1) {
         count = 0;
       }
@@ -100,6 +100,8 @@ function init() {
 function rollSlider() {
   barbers.style.transform = "translate(-" + count * width + "px)";
 }
+
+
 
 //scroll-items-animation
 const scrollItems = document.querySelectorAll(".s-item");
