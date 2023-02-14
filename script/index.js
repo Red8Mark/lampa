@@ -27,7 +27,7 @@ const prevBtn = document.querySelector(".slider-prev");
 let count = 0;
 let width;
 
-window.addEventListener("resize", init);
+barbers.addEventListener(onload, init);
 init();
 
 function init() {
