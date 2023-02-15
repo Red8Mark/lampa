@@ -60,7 +60,6 @@
 
 body {
   min-width: 320px;
-  overflow-x: hidden;
   background-color: var(--bg-color);
   color: var(--text-color);
 }
